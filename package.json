@@ -9,11 +9,6 @@
     "format": "prettier --write './**'",
     "coverage": "jest --coverage"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && concurrently yarn:test yarn:lint"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
@@ -47,7 +42,9 @@
     "webpack-cli": "^3.3.12",
     "webpack-config-single-spa-react": "^1.10.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "ag-grid-community": "^23.2.1",
+    "ag-grid-react": "^23.2.1"
   },
   "dependencies": {
     "react": "^16.13.1",

@@ -15,5 +15,6 @@ module.exports = (webpackConfigEnv) => {
 
   return webpackMerge.smart(defaultConfig, rxjsExternals, {
     // customizations go here
+    externals: [/^ag-grid-react\/?.*$/],
   });
 };

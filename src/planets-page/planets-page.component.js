@@ -4,6 +4,7 @@ import SelectedPlanet from "./selected-planet/selected-planet.component.js";
 import { get } from "lodash";
 import { getPlanets } from "../utils/api.js";
 import { Button } from "@react-mf/styleguide";
+import RenderGrid from "./selected-planet/ag-grid.component";
 
 export default function PlanetPage(props) {
   const initialState = {
@@ -57,6 +58,11 @@ export default function PlanetPage(props) {
         <div className="w-2/3 p-6 border-l-2 border-white">
           <div className="selectedPlanet">
             <SelectedPlanet selectedId={selected} />
+          </div>
+        </div>
+        <div className="w-2/3 p-6 border-l-2 border-white">
+          <div>
+            <RenderGrid />
           </div>
         </div>
       </div>
